@@ -1,0 +1,14 @@
+- insert:
+    - id: xhs-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: xiaohongshu
+        transport: streamable-http
+        url: http://127.0.0.1:18060/mcp
+        toolCallTimeoutMs: 120000
+        failOnStartupError: false
+        reconnect:
+          enabled: true
+          initialDelayMs: 1000
+          maxDelayMs: 30000
+          maxAttempts: 1000

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Xiaohongshu Search (local MCP)",
+    "description": "Connects the local xiaohongshu-mcp server so the agent can search Xiaohongshu notes by keyword and read note details, using your own logged-in session."
+  }
+}

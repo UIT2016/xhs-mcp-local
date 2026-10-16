@@ -1,0 +1,22 @@
+# 运行时产物 —— 含登录态与大体积二进制，一律不提交
+/bin/
+/home/
+/tmp/
+/run/
+
+# 登录凭据（绝对禁止进入仓库，哪怕是私有仓库）
+cookies.json
+**/cookies.json
+*.cookie
+*.cookies
+
+# 第三方可执行文件与压缩包
+*.exe
+*.zip
+*.dmg
+*.tar.xz
+*.part
+
+# 日志与临时文件
+*.log
+*.tmp
