@@ -1,4 +1,13 @@
+# Row 1: Host half of this bundle — owns the server process with the plugin lifecycle.
+# `./index.js` is anchored beside this patch file (the bundle root).
 - insert:
+    - id: xhs-mcp-server
+      name: ./index.js
+      config:
+        baseDir: 'D:\code\codex\xhs'
+        port: 18060
+
+    # Row 2: the MCP client that exposes that server's tools to the agent.
     - id: xhs-mcp
       name: '@deepseek-ai/dsh-mcp-client'
       config:

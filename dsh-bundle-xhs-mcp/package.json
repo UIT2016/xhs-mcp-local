@@ -1,14 +1,16 @@
 {
   "name": "@local/xhs-mcp",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "type": "module",
-  "description": "Connects the locally running xiaohongshu-mcp server so the agent can search Xiaohongshu notes by keyword.",
+  "description": "Runs the local xiaohongshu-mcp server with the DSH plugin lifecycle and connects it as an MCP server, so the agent can search Xiaohongshu notes by keyword.",
   "exports": {
+    ".": "./index.js",
     "./locale/*.json": "./locale/*.json",
     "./icon": "./icon.svg"
   },
   "files": [
+    "index.js",
     "cordis.patch.yml",
     "locale/*.json",
     "icon.svg",
